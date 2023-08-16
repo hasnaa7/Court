@@ -1,0 +1,169 @@
+
+body{
+  direction: rtl;
+  background-color: #FFF5EE;
+  color:rgb(77, 65, 43);
+}
+
+.main-body .navbar{
+  width: 100%;
+  height:80px;
+  background-color:  #f1f1f1;
+  opacity: 0.7;
+ 
+  
+
+}
+
+.main-body .sidebar {
+    position: relative;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index:1000000; /* Stay on top */
+    top: 90px;
+    right:10px;
+    background-color: #c5c1bd !important; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .main-body .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:rgb(77, 65, 43);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .main-body .sidebar a:hover {
+    color:white;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .main-body .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .main-body .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+   /* position: fixed; */
+    color: 818181;
+    padding: 10px 15px;
+    border: none;
+  }
+ 
+  .main-body .openbtn:hover {
+    background-color:#b3aba5;
+  }
+  
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  .main-body #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+    direction: ltr !important;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+.main-body .header{
+  height: 100vh;
+  background-image: url(../images//pic1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.main-body .header .overlay{
+  position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+.main-body .header .overlay  .left{
+  background-color: #5c5c5b;
+  width: 60%;
+  height: 60vh;
+   position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+.main-body .header .overlay  .left form label{
+
+  font-size:25px;
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
+ 
+
+}
+
+
+
+.main-body .header .overlay  .left form input{
+ width: 80%;
+ background-color: #272625;
+ color: white;
+ padding: 20px;
+ margin-top:25px;
+ margin-right: 20px;
+ 
+
+}
+
+.main-body .header .overlay  .left form input::placeholder{
+  color:white;
+  font-size: 20px;
+}
+.main-body .header .overlay  .left form .btn{
+  width:140px;
+  height: 60px;
+  border: none;
+  border-radius:10px;
+  position: absolute;
+  margin-top:70px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  font-size: 20px;
+  background-color: #c5c1bd;
+}
+
+.left .btn:hover{
+  background-color: #6e584c;
+ 
+}
+  
+
+
+
+
