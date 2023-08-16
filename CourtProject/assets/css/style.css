@@ -1,162 +1,85 @@
-body {
-  direction: rtl;
-  background-color: #FFF5EE;
-  color: rgb(77, 65, 43);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+ 
+      <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
-.main-body .navbar {
-  width: 100%;
-  height: 80px;
-  background-color: #f1f1f1;
-  opacity: 0.7;
-  z-index: 4;
-}
+    <title>مدني مكتب امامي</title>
+</head>
+<body>
+    <main class="main-body">
+    <!-- strat nav -->
+    <nav class="navbar">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">ماذا عن </a>
+        <a href="#">الخدمات </a>
+        <a href="#">تواصل معنا</a>
+       
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <h2></h2>
+        <p></p>
+      </div>
+    </nav>
+   <!-- end nav -->
 
-.main-body .sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index:6 !important;
-  top: 90px;
-  right: 10px;
-  background-color: #c5c1bd !important;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-}
+   <div class="header">
+    <div class="overlay"> </div>
+      <aside class="left">
 
-.main-body .sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: rgb(77, 65, 43);
-  display: block;
-  transition: 0.3s;
-}
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">رفع الدعوى </label>
+            <input type="file" class="form-control" id="exampleFormControlInput1" >
+            <label for="exampleFormControlInput2">القيمة</label>
+            <input type="text" class="form-contro2" id="exampleFormControlInput2" placeholder="قيمة افتراضيه 40 يوم من رفع الدعوى" >
+            
+        
+        
+            <div class="sel">
+              <label for="many">تقدير الرسوم</label>
+              <select name="" id="">
+                <option value="1">10000</option>
+                <option value="2">20000</option>
+                <option value="3">30000</option>
+                <option value="4">40000</option>
+                <option value="5">50000</option>
+                <option value="6">60000</option>
+                <option value="7">70000</option>
+                <option value="8">90000</option>
+                <option value="9">10000</option>
+              
+              </select>
 
-.main-body .sidebar a:hover {
-  color: white;
-}
+            </div>
+            <button class="btn">حفظ</button>
+           
+        </form>
+        
+      </aside>
+    </div>
+  
+  
 
-.main-body .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
 
-.main-body .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  color: 818181;
-  padding: 10px 15px;
-  border: none;
-}
 
-.main-body .openbtn:hover {
-  background-color: #b3aba5;
-}
+  </main>
 
-.main-body #main {
-  transition: margin-left 0.5s;
-  padding: 20px;
-  direction: ltr !important;
-}
-
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
-}
-
-.main-body .header {
-  height: 100vh;
-  background-image: url(../images/pic1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.main-body .header .overlay {
-  position: absolute;
-  background-color: black;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-  z-index: -1;
-}
-
-.main-body .header .left {
-  background-color:#b1a69a;
-  opacity: 0.9;
-  width: 60%;
-  height: 60vh;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow:8px 8px 15px #835542;
-}
-.main-body .header .left form label {
-  display: block;
-  font-size: 25px;
-  color: rgb(44, 40, 31);
-  padding: 10px;
-  margin-right: 20px;
-}
-
-.main-body .header .left form {
-  z-index: 10;
-}
-
-.main-body .header .left form .sel label{
-  display:inline;
-}
-
-.main-body .header .left form input {
-  width:80%;
-  background-color: #272625;
-  color: white;
-  padding: 20px;
-  margin-top: 20px;
-  margin-right: 10px;
-}
-
-.main-body .header .left form input::placeholder {
-  color: white;
-  font-size: 15px;
-}
-
-.main-body .header .left form .btn {
-  width: 140px;
-  height: 60px;
-  border: none;
-  border-radius: 10px;
-  position: absolute;
-  margin-top: 70px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(44, 40, 31);;
-  font-size: 20px;
-  background-color: #c5c1bd;
-}
-
-.main-body .header .left form .btn:hover {
-  background-color: #3a3938;
-  opacity: 0.7;
-  transition: 1s;
-  color:#FFF5EE;
-}
+  <!-- Template Main JS File -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
